@@ -1,4 +1,4 @@
-process,string
+process,strings
 Update.exe,gitkraken 
 rundll32.exe,lenovo 
 dotnet.exe,\.nuget\
@@ -30,3 +30,4 @@ rundll32.exe,/issues/
 dotnet.exe,--runtimeconfig
 RegAsm.exe,/u /s
 mshta.exe,/definition
+
